@@ -1,0 +1,8 @@
+goos: darwin
+goarch: amd64
+BenchmarkEchoWithLoop-8
+  300000	      5845 ns/op
+BenchmarkEchoWithJoin-8
+  300000	      5785 ns/op
+PASS
+ok  	_/Users/ajay/lab/gopl/ch1/exe1.3	3.616s
