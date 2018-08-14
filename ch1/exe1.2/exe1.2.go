@@ -1,3 +1,4 @@
+//Exe1.2 prints index and value of each command-line argument
 package main
 
 import (
@@ -7,7 +8,6 @@ import (
 
 func main() {
 	for index, arg := range os.Args[:] {
-		fmt.Printf("%d %s", index, arg)
-		fmt.Println()
+		fmt.Println(index, arg)
 	}
 }
