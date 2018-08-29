@@ -54,7 +54,7 @@ func SearchIssues(terms []string) (*IssuesSearchResult, error) {
 	return &result, nil
 }
 
-func main() {
+func printIssues() {
 	result, err := SearchIssues(os.Args[1:])
 	if err != nil {
 		log.Fatal(err)
@@ -63,4 +63,8 @@ func main() {
 	for _, item := range result.Items {
 		fmt.Printf("#%-5d %9.9s %.55s\n", item.Number, item.User.Login, item.Title)
 	}
+}
+
+func main() {
+	printIssues()
 }
